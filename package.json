@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "reset": "rm -rf .nuxt node_modules .output package-lock.json"
+  },
+  "devDependencies": {
+    "@nuxtjs/critters": "^0.4.0",
+    "@prisma/client": "^4.10.0",
+    "lorem-ipsum": "^2.0.8",
+    "nuxt": "^3.1.2",
+    "prisma": "^4.10.0",
+    "sass": "^1.58.0",
+    "vite-plugin-vuetify": "^1.0.2",
+    "vuetify": "3.1.3"
+  },
+  "dependencies": {}
+}
