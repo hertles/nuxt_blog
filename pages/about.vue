@@ -1,14 +1,13 @@
 <template>
   <div>
     <EditArticle v-if="editing" :article="article" :about="true" @apply="editAboutApply"/>
-    <FullArticle v-else v-bind:article="article"></FullArticle>
+<!--    <FullArticle v-else v-bind:article="article"></FullArticle>-->
     <div v-if="!editing" class="btn btn-secondary" @click="setEditing">Изменить</div>
   </div>
 </template>
 
 <script setup>
-import FullArticle from '../components/FullArticle'
-import EditArticle from '../components/EditArticle'
+import EditArticle from '../components/EditPost.vue'
 let editing = ref(false)
 const setEditing = () => {
   editing.value = true

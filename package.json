@@ -9,14 +9,19 @@
     "reset": "rm -rf .nuxt node_modules .output package-lock.json"
   },
   "devDependencies": {
+    "@nuxtjs/composition-api": "^0.33.1",
     "@nuxtjs/critters": "^0.4.0",
+    "@pinia/nuxt": "^0.4.7",
     "@prisma/client": "^4.10.0",
     "lorem-ipsum": "^2.0.8",
     "nuxt": "^3.1.2",
+    "pinia": "^2.0.33",
     "prisma": "^4.10.0",
     "sass": "^1.58.0",
     "vite-plugin-vuetify": "^1.0.2",
     "vuetify": "3.1.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
 }
