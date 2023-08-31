@@ -14,9 +14,11 @@ export default defineNuxtConfig({
             noExternal: ['vuetify']
         },
     },
+    ssr: true,
     modules: [
         '@nuxtjs/critters',
-        '@pinia/nuxt',
+        '@pinia/nuxt'
+
         /*async (options, nuxt) => {
             nuxt.hooks.hook('vite:extendConfig', config => config.plugins.push(
                 vuetify()
@@ -32,5 +34,9 @@ export default defineNuxtConfig({
             inlineFonts: true
         },
     },
-
+    runtimeConfig: {
+        public: {
+            baseURL: process.env.BASE_URL || 'http://localhost:3000'
+        }
+    },
 })

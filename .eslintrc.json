@@ -1,0 +1,5 @@
+{
+  "ignore": [
+    "~/prisma/dev.db"
+  ]
+}

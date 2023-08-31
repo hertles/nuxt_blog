@@ -10,6 +10,9 @@ export default defineEventHandler(async (event) => {
                     {content: {contains: query.search}}
                 ]
             },
+            orderBy: {
+                date: "desc"
+            },
             include: {
                 categories:
                     {
@@ -26,15 +29,18 @@ export default defineEventHandler(async (event) => {
             ],
             AND: {
                 categories: {
-                        some: {
-                            category: {
-                                is: {
-                                    id: Number(query.category)
-                                }
+                    some: {
+                        category: {
+                            is: {
+                                id: Number(query.category)
                             }
                         }
                     }
+                }
             }
+        },
+        orderBy: {
+            date: "desc"
         },
         include: {
             categories:

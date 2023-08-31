@@ -3,3 +3,11 @@ a {
   color: inherit;
 }
 
+@font-face {
+  font-family: 'mplus';
+  src:  local('mplus'), url(../fonts/SawarabiGothic-Regular.ttf);
+}
+
+html {
+  font-family: 'mplus', sans-serif;
+}

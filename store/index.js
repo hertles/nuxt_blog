@@ -8,7 +8,6 @@ export const usePostsStore = defineStore("postsStore", () => {
     const error = ref(null)
 
     const setCategory = cat => {
-        console.log(cat)
         category.value = cat;
     };
 
